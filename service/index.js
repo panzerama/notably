@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-   res.send('Hello World');
+  const notecard = { front: "This is the front.", back: "this is the back" };
+  res.send(notecard);
 })
 
 var server = app.listen(4000, function () {
