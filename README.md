@@ -25,31 +25,31 @@ Still in development, contents may change
 
 ## Project Roadmap (in no particular order)
 ### Client
-[ ] Add notecard view
-[ ] Create new notecard
-[ ] Delete notecard
-[ ] Update notecard
-[ ] Add flashcard detail view
-[ ] Add reveal for back of flashcard
-[ ] Add flashcard grid view 
-[ ] Create new flashcard
-[ ] Delete flashcard
-[ ] Update flashcard
-[ ] Add tagging/collections
+- [ ] Add notecard view
+- [ ] Create new notecard
+- [ ] Delete notecard
+- [ ] Update notecard
+- [ ] Add flashcard detail view
+- [ ] Add reveal for back of flashcard
+- [ ] Add flashcard grid view 
+- [ ] Create new flashcard
+- [ ] Delete flashcard
+- [ ] Update flashcard
+- [ ] Add tagging/collections
 
 ### Service
-[ ] REST API definition in Swagger
-[ ] Get Notecard
-[ ] Get Notecards
-[ ] Create Notecard
-[ ] Update Notecard
-[ ] Delete Notecard
-[ ] Get Flashcard
-[ ] Get Flashcards
-[ ] Create Flashcard
-[ ] Update Flashcard
-[ ] Delete Flashcard
-[ ] Add Tag
-[ ] Update Tag
-[ ] Delete Tag
-[ ] Get Notecards by tag
+- [ ] REST API definition in Swagger
+- [ ] Get Notecard
+- [ ] Get Notecards
+- [ ] Create Notecard
+- [ ] Update Notecard
+- [ ] Delete Notecard
+- [ ] Get Flashcard
+- [ ] Get Flashcards
+- [ ] Create Flashcard
+- [ ] Update Flashcard
+- [ ] Delete Flashcard
+- [ ] Add Tag
+- [ ] Update Tag
+- [ ] Delete Tag
+- [ ] Get Notecards by tag
