@@ -95,6 +95,19 @@ object.aFunc();
 
 const anArray = [82, "heterogenous", object];
 
+// In JavaScript a function can be passed as a parameter to another function.
+
+function wrapper(someFunc) {
+  const result = someFunc(42);
+  return result;
+}
+
+function addTwo(toNumber) {
+  return toNumber + 2;
+}
+
+console.log(wrapper(addTwo))
+
 /**
  * Closures
  * JavaScript closures allow functions to access variables in scope when the
@@ -136,11 +149,32 @@ var isDef = "Hello, world!";
 var isTrue = true;
 var isNotZero = 1;
 
-/** synchronous/asynchronous */
+/**
+ * Classes, Prototypes, the `this` keyword, and Method Chaining 
+ */
+
+/** map/filter/reduce */
+/** 
+ * A synchronous operation blocks the execution of operations after it. This is
+ * inefficient, and Node is designed to give us another option. Asynchronous
+ * operations only execute when some prerequisite condition is met.
+ * One of the most common ways to achieve this is to provide a callback.
+ */
+
+function someAsync(inputValue, callbackFunc) {
+  for (let i; i < 1000000; i++) {
+    inputValue++;
+  }
+  callbackFunc(inputValue);
+}
+
+const printValue = (value) => {
+  console.log(value);
+}
+
+someAsync(42, printValue);
+
 /** promises and async/await */
 /** modules (with this as an example) */
-/** first class functions */
-/** map/filter/reduce */
 /** Node, callbacks, the tick, events */
 /** repl, npm */
-/** a node web server as the example? */
