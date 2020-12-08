@@ -4,6 +4,8 @@
  *
  */
 
+require('dotenv');
+
 /**
  * `console.log`
  * When you're trying to debug some code you've written, the very most basic
@@ -155,6 +157,7 @@ var isNotZero = 1;
 
 /** map/filter/reduce */
 /** 
+ * Asynchronous JavaScript
  * A synchronous operation blocks the execution of operations after it. This is
  * inefficient, and Node is designed to give us another option. Asynchronous
  * operations only execute when some prerequisite condition is met.
@@ -174,7 +177,48 @@ const printValue = (value) => {
 
 someAsync(42, printValue);
 
-/** promises and async/await */
-/** modules (with this as an example) */
-/** Node, callbacks, the tick, events */
-/** repl, npm */
+/** 
+ * ES6 introduced built in promises, which provide us an alternative for
+ * handling asynchronous function completion. A promise represents the pending
+ * completion of some code, which may either succeed (resolve) or fail (reject).
+ * It is often represented by the `then` chained method.
+ * 
+ * Axios is a library for making network requests.
+ */
+
+const axios = require('axios').default;
+
+var options = {
+  method: 'GET',
+  url: 'https://dark-sky.p.rapidapi.com/47.608013,-122.335167',
+  params: {lang: 'en', units: 'auto'},
+  headers: {
+    'x-rapidapi-key': process.env.DARK_SKY_KEY,
+    'x-rapidapi-host': 'dark-sky.p.rapidapi.com'
+  }
+};
+
+axios.get(options).then((response => {
+  console.log("request completed!");
+}));
+
+
+/** 
+ * Node Package Manager
+ * By installing Node you've installed the Node package manager, `npm`. `npm` is 
+ * used to manage dependencies and libraries you use in your application, much 
+ * like the axios package used in the last example. I installed axios with the 
+ * command `npm install axios`.
+ * 
+ * There are two ways to import a package. The preferred method in this class is
+ * `require`
+ */
+
+const book = require('./book.js');
+
+/**
+ * You can see examples of exporting functions, objects and values from a module
+ * in book.js.
+ */
+
+console.log(book.getBook('Moby Dick'));
