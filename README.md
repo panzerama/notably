@@ -12,16 +12,7 @@
 * Extra credit will be awarded to anyone who creates a pull request for one of the features below with a **substantial contribution**, one point per PR, up to 3 points, weighted above the rest of class work
 
 # Getting Started
-Use the `npm start` scripts in client and service folders individually. The app relies on individual `.env` files in both client and service app folders. The necessary environment variables are ...?
-
-# Classroom Lectures
-Still in development, contents may change
-0. Dev environment setup
-1. React and Express basics, mvc, req response cycle part 1
-2. CRUD, Rest apis, Network requests in depth
-3. Routing, Single page vs Multi page
-4. State, state machines, why and when to store and expire data
-5. ...?
+Use the `npm start` scripts in client and service folders individually. The app relies on individual `.env` files in both client and service app folders. The necessary environment variables are api keys and hosts in the demo Express app.
 
 ## Project Roadmap (in no particular order)
 ### Client
